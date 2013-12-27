@@ -14,3 +14,4 @@ double r,b,l,t;
 	//кулька
 	dc.MoveTo(r/2+15,t+100);
 	dc.AngleArc(r/2,t+100,15,0,360);
+}
