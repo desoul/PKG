@@ -1,17 +1,11 @@
-double r,b,l,t;
+	double r,b;
 	CRect v;
 	GetClientRect (&v);
 	r=v.right;
 	b=v.bottom;
-	l=v.left;
-	t=v.top;
 	//поверхня під столиком
-	dc.MoveTo(l+50,b-20);
-	dc.LineTo(r-50,b-20);
-	dc.LineTo(r-50,b-40);
-	dc.LineTo(l+50,b-40);
-	dc.LineTo(l+50,b-20);
+	dc.Rectangle(r/15,b-b/40,r-r/15,b-b/25);
 	//кулька
-	dc.MoveTo(r/2+15,t+100);
-	dc.AngleArc(r/2,t+100,15,0,360);
+	dc.MoveTo(r/2+(b/50+r/50),b/6);
+	dc.AngleArc(r/2,b/6,b/50+r/50,0,360);
 }
